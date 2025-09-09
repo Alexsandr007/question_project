@@ -37,6 +37,16 @@ services:
     depends_on:
       - web
 
+  tests:
+    build: .
+    command: pytest -v
+    volumes:
+      - .:/app
+    environment:
+      - DJANGO_SETTINGS_MODULE=question_project.settings
+    depends_on:
+      - web
+
 volumes:
   pgdata:
   static_volume:
