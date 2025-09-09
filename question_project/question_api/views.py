@@ -3,6 +3,8 @@ from rest_framework.response import Response
 from rest_framework.exceptions import NotFound
 from .models import Question, Answer
 from .serializers import QuestionSerializer, AnswerSerializer
+import logging
+logger = logging.getLogger(__name__)
 
 class QuestionListCreateView(generics.ListCreateAPIView):
     queryset = Question.objects.all().order_by('-created_at')
