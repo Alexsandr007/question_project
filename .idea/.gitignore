@@ -1,11 +1,4 @@
-# Default ignored files
+
 /shelf/
 /workspace.xml
-__pycache__/
-*.pyc
-*.log
-*.pot
-*.pyc
-*.pyo
-*.swp
-.DS_Store
+
