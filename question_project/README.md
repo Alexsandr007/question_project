@@ -42,4 +42,8 @@ docker-compose run --rm tests
 
 ```bash
 git clone https://github.com/Alexsandr007/question_project.git
-cd .\question_project\       
+```
+### Переход в корневую директорию проекта
+```cmd
+cd .\question_project\  
+```     
